@@ -27,7 +27,7 @@ app.post("/contact", function (req, res) {
     {
       from: req.body.from,
       to: [contactAddress],
-      subject: "Someone hollered!",
+      subject: `${req.body.name} hollered from mork.dev!`,
       html: req.body.message || "[No message]",
     },
     function (err, info) {
