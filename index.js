@@ -7,7 +7,7 @@ require("dotenv").config({
 })
 
 const app = express()
-app.use(bodyParser.urlencoded())
+app.use(bodyParser.json())
 
 const port = 3000
 
